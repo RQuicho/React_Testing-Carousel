@@ -5,7 +5,7 @@ import TEST_IMAGES from "./_testCommon.js";
 it("works when you click on the right arrow", function() {
   const { container } = render(
     <Carousel
-      photos={TEST_IMAGES}
+      pics={TEST_IMAGES}
       title="images for testing"
     />
   );
@@ -28,4 +28,16 @@ it("works when you click on the right arrow", function() {
   expect(
     container.querySelector('img[alt="testing image 2"]')
   ).toBeInTheDocument();
+});
+
+
+// smoke test
+test('it renders without crashing', () => {
+  render(<Carousel />);
+});
+
+// snapshot test
+test('it matches snapshot', () => {
+  const {asFragment} = render(<Carousel />);
+  expect(asFragment()).toMatchSnapshot();
 });

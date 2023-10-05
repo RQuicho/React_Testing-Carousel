@@ -4,15 +4,15 @@
   "private": true,
   "dependencies": {
     "@primer/octicons-react": "^19.8.0",
-    "@testing-library/jest-dom": "*",
-    "@testing-library/react": "*",
-    "@testing-library/user-event": "*",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.8.3",
-    "react": "*",
-    "react-dom": "*",
-    "react-scripts": "*",
-    "web-vitals": "*"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

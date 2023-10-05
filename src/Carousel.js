@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Carousel.css";
+import photos from "./photos";
 import Card from "./Card";
 
 
@@ -14,11 +15,11 @@ import Card from "./Card";
  * 
  * App --> Carousel --> Card
  */
- function Carousel({ photos, title }) {
+ function Carousel({ pics = photos, title }) {
   const [currCardIdx, setCurrCardIdx] = useState(0);
 
-  const currCard = photos[currCardIdx];
-  const total = photos.length;
+  const currCard = pics[currCardIdx];
+  const total = pics.length;
 
   //Increments currCardIdx state by 1
   function goForward() {
